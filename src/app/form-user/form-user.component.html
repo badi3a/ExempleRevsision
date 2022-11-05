@@ -2,11 +2,15 @@
 <form>
   <div class="form-group">
     <label>firstName</label>
-    <input type="text" name="firstName" class="form-control">
+    <input type="text" name="firstName" class="form-control"
+    [(ngModel)]="user.firstName">
   </div>
   <div class="form-group">
     <label>lastName</label>
-    <input type="text" name="lastName" class="form-control">
+    <input type="text" name="lastName" class="form-control"
+    [(ngModel)]="user.lastName">
   </div>
-  <button class="btn btn-success">save</button>
+  <button class="btn btn-success" (click)="save()">
+    save
+  </button>
 </form>
